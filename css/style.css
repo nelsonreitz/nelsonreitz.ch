@@ -23,5 +23,31 @@ html {
 }
 
 body {
+  margin: 0 auto;
+  max-width: 960px;
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: lightgrey;
 }
+
+.header,
+.hero,
+.section,
+.footer {
+  background-color: grey;
+}
+
+.header {
+  height: 100px;
+}
+
+.hero,
+.section {
+  height: 450px;
+  margin-bottom: 150px;
+}
+
+.footer {
+  height: 100px;
+}
+
+
