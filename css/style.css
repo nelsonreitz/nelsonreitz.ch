@@ -23,31 +23,40 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  max-width: 960px;
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: lightgrey;
+  background-color: #dcdcdc;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.45;
 }
 
 .header,
+.content,
+.footer {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
 .hero,
-.section,
 .footer {
   background-color: grey;
 }
 
-.header {
-  height: 100px;
+.header,
+.footer {
+  height: 72px;
+}
+
+.hero {
+  height: 450px;
 }
 
 .hero,
 .section {
-  height: 450px;
   margin-bottom: 150px;
 }
 
-.footer {
-  height: 100px;
-}
 
 
