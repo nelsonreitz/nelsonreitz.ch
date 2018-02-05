@@ -38,11 +38,12 @@ p {
   line-height: 1.45;
 }
 
-.header,
-.content,
-.footer {
-  margin: 0 auto;
-  max-width: 720px;
+.container {
+  max-width: 752px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero,
