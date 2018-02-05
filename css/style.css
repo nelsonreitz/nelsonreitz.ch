@@ -57,10 +57,13 @@ p {
 }
 
 .hero {
-  height: 450px;
+  height: 480px;
 }
 
-.hero,
+.content {
+  padding-top: 64px;
+}
+
 .section {
-  margin-bottom: 150px;
+  margin-bottom: 106px;
 }
