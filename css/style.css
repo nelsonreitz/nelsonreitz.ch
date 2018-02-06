@@ -84,3 +84,22 @@ p {
 .section {
   margin-bottom: 106px;
 }
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.project-card {
+  display: block;
+  background-color: grey;
+}
