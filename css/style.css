@@ -39,6 +39,10 @@ p {
   line-height: 1.45;
 }
 
+h1 {
+  margin-top: 0;
+}
+
 .section-title {
   margin-top: 0;
 }
@@ -68,7 +72,23 @@ p {
   background-color: grey;
 }
 
-.header,
+/* Header */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+}
+
+.site-title {
+}
+
+.nav {
+  display: flex;
+}
+
+
 .footer {
   height: 72px;
 }
