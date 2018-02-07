@@ -28,7 +28,6 @@ body {
 }
 
 img {
-  display: block;
   width: 64px;
   height: 64px;
 }
@@ -88,7 +87,7 @@ h1 {
   display: flex;
 }
 
-
+/* Footer */
 .footer {
   height: 72px;
 }
@@ -123,3 +122,15 @@ h1 {
   display: block;
   background-color: grey;
 }
+
+/* Skills */
+.skill {
+  text-align: center;
+}
+
+/* Tools */
+.tool {
+  text-align: center;
+}
+
+/* Contact */
