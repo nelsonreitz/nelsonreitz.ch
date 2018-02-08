@@ -7,10 +7,6 @@
  * http://nelsonreitz.ch
  */
 
-/** Table of content
- * - General
- */
-
 /* General */
 html {
   -webkit-font-smoothing: antialiased;
@@ -62,6 +58,7 @@ a {
   margin-top: 0;
 }
 
+/* Grid */
 .container {
   max-width: 752px;
   padding-left: 16px;
@@ -70,8 +67,22 @@ a {
   margin-left: auto;
 }
 
-.hero,
-.footer {
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+/* Jumbotron */
+.hero {
   background-color: grey;
 }
 
@@ -107,6 +118,7 @@ a {
 /* Footer */
 .footer {
   height: 72px;
+  background-color: grey;
 }
 
 .hero {
@@ -121,20 +133,7 @@ a {
   margin-bottom: 106px;
 }
 
-.row {
-  margin-left: -8px;
-  margin-right: -8px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  padding-left: 8px;
-  padding-right: 8px;
-  flex-basis: 0;
-  flex-grow: 1;
-}
-
+/* Projects */
 .project-card {
   display: block;
   background-color: grey;
