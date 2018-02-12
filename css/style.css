@@ -101,6 +101,11 @@ a:hover {
   box-shadow: 0px 1px 5px 0px #676767;
 }
 
+.btn:hover {
+  background-color: rgb(150, 150, 150);
+  text-decoration: none;
+}
+
 /* Jumbotron */
 .jumbotron {
   margin-top: -72px;
