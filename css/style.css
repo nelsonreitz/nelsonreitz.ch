@@ -215,3 +215,22 @@ a:hover {
 }
 
 /* Contact */
+
+/* Project */
+
+/* Project meta */
+.project-meta .meta-group {
+  margin-bottom: 16px;
+}
+
+.meta-group h4 {
+  text-transform: uppercase;
+}
+
+.meta-group h4,
+.meta-group p {
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
