@@ -84,16 +84,30 @@ a:hover {
   -webkit-box-flex: 1;
   flex-grow: 1;
   max-width: 100%;
-  position: relative;
-  width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
+}
+
+.col-3 {
+  -webkit-box-flex: 0;
+  flex: 0 0 25%;
+  max-width: 25%; 
+}
+
+.col-4 {
+  -webkit-box-flex: 0;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%; 
 }
 
 .col-6 {
   -webkit-box-flex: 0;
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.col,
+.col-3,
+.col-4,
+.col-6 {
   position: relative;
   width: 100%;
   padding-left: 8px;
