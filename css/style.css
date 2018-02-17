@@ -30,6 +30,8 @@ img {
 
 /* Typography */
 p {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 19px;
   line-height: 1.45;
 }
@@ -52,10 +54,6 @@ a:hover {
 }
 
 .project-title {
-  margin-top: 0;
-}
-
-.skill-title {
   margin-top: 0;
 }
 
@@ -195,12 +193,29 @@ a:hover {
   background-color: grey;
 }
 
+/* Content */
 .content {
   padding-top: 64px;
 }
 
 .section {
   margin-bottom: 106px;
+}
+
+/* Skills */
+.skill-card {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.skill-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.skill-description {
+  margin-bottom: 0;
 }
 
 /* Projects */
@@ -238,13 +253,12 @@ a:hover {
   margin-bottom: 0;
 }
 
-/* Skills */
-.skill {
-  text-align: center;
-}
+
 
 /* Tools */
-.tool {
+.tool-card {
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
 }
 
