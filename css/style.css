@@ -104,6 +104,12 @@ a:hover {
   max-width: 50%;
 }
 
+.col-8 {
+  -webkit-box-flex: 0;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
 .col,
 .col-3,
 .col-4,
