@@ -270,6 +270,10 @@ a:hover {
 }
 
 /* Contact */
+.contact-img {
+  width: 100%;
+  height: 100%;
+}
 
 /* Project */
 
