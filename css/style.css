@@ -63,7 +63,7 @@ a:hover {
 
 /* Grid */
 .container {
-  max-width: 752px;
+  max-width: 832px;
   padding-left: 16px;
   padding-right: 16px;
   margin-right: auto;
@@ -108,11 +108,18 @@ a:hover {
   max-width: 66.666667%;
 }
 
+.col-9 {
+  -webkit-box-flex: 0;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
 .col,
 .col-3,
 .col-4,
 .col-6,
-.col-8 {
+.col-8,
+.col-9 {
   position: relative;
   width: 100%;
   padding-left: 8px;
@@ -219,17 +226,17 @@ a:hover {
 }
 
 .skill-icon {
-  display: none;
   margin-bottom: 8px;
 }
 
 .skill-title {
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 8px;
 }
 
 .skill-description {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -272,7 +279,6 @@ a:hover {
 .tool-card {
   padding-top: 16px;
   padding-bottom: 16px;
-  text-align: center;
 }
 
 .tool-icon {
