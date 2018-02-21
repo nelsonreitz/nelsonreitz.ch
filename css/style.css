@@ -227,12 +227,9 @@ a:hover {
 }
 
 /* Skills */
-.skills {
-  margin-top: 40px;
-}
-
 .skill-card {
-  padding: 24px 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .skill-icon {
