@@ -73,8 +73,8 @@ a:hover {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -8px;
-  margin-right: -8px;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
 .col {
@@ -122,8 +122,8 @@ a:hover {
 .col-9 {
   position: relative;
   width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 /* Elements */
@@ -258,7 +258,7 @@ a:hover {
   box-shadow: 0px 1px 5px 0px #676767;
   overflow: hidden;
   padding: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .project-card:hover {
