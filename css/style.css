@@ -252,12 +252,10 @@ a:hover {
 /* Projects */
 .project-card {
   color: #000;
-  display: block;
+  display: flex;
   background-color: white;
   border-radius: 2px;
   box-shadow: 0px 1px 5px 0px #676767;
-  overflow: hidden;
-  padding: 16px;
   margin-bottom: 24px;
 }
 
@@ -268,8 +266,10 @@ a:hover {
 .project-card img {
   width: 104px;
   height: 104px;
-  float: left;
-  margin: -16px 16px -16px -16px;
+}
+
+.project-card .card-body {
+  padding: 16px;
 }
 
 .project-card .project-title {
