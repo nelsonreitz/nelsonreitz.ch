@@ -197,8 +197,18 @@ a:hover {
 
 /* Footer */
 .footer {
-  height: 72px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: grey;
+}
+
+.footer .social-links {
+  text-align: right;
+}
+
+.social-links ul {
+  display: inline-block;
+  text-align: left;
 }
 
 /* Content */
