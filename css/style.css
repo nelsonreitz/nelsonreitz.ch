@@ -142,7 +142,7 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: rgb(150, 150, 150);
+  background-color: #FF4757;
   text-decoration: none;
 }
 
@@ -302,6 +302,10 @@ a:hover {
   font-size: 40px;
   margin-bottom: 8px;
   color: #083352;
+}
+
+#invision-icon {
+  fill: #083352;
 }
 
 /* Contact */
