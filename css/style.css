@@ -24,8 +24,7 @@ body {
 }
 
 img {
-  width: 64px;
-  height: 64px;
+  max-width: 100%;
 }
 
 /* Typography */
@@ -333,3 +332,8 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.project-article img {
+  margin-bottom: 24px;
+}
+
