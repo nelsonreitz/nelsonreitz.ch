@@ -78,13 +78,24 @@ a:hover {
 .btn {
   color: var(--white);
   padding: 1rem 1.5rem;
-  background-color: #ff7373;
+  background-color: #ff6278;
   border: 0;
 }
 
 .btn:hover {
   background-color: #FF4757;
   text-decoration: none;
+}
+
+.contact-btn {
+  padding: 1.25rem 2rem 1.25rem 1.5rem;
+  font-size: 1.25rem;
+}
+
+.contact-btn i {
+  margin-right: .5rem;
+  font-size: 1.25rem;
+  color: #ffa4a4;
 }
 
 /* Header */
@@ -344,7 +355,7 @@ a:hover {
 /* Contact */
 .section#contact {
   padding-top: 6.5rem;
-  padding-bottom: 9.5rem;
+  padding-bottom: 9rem;
   color: var(--white);
   background-color: #083352;
 }
