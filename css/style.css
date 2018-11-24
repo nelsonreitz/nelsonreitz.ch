@@ -32,8 +32,11 @@ h1 {
 }
 
 .section h3 {
-  margin-top: 3rem;
+  padding-bottom: .5rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
+  border-bottom: 1px solid #dee3e8;
 }
 
 a {
@@ -195,7 +198,7 @@ a:hover {
 /* Content */
 .content {
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .section {
@@ -302,21 +305,40 @@ a:hover {
 }
 
 /* Tools */
+.tool-list {
+  margin-bottom: -4rem;
+}
+
+.tool-list .tool-card {
+  margin-bottom: 4rem;
+}
+
 .tool-card {
   display: block;
   background-color: transparent;
+  text-align: center;
   border: 0;
 }
 
 .tool-icon {
   display: block;
-  font-size: 2.5rem;
-  margin-bottom: .5rem;
+  font-size: 3rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
   color: #083352;
 }
 
 #invision-icon {
   fill: #083352;
+}
+
+#figma-icon {
+  fill: #083352;
+}
+
+.tool-title {
+  font-weight: 600;
 }
 
 /* Contact */
