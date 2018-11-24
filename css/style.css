@@ -11,7 +11,7 @@
 body {
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
-  background-color: #f8fbff;
+  background-color: #fff;
   border: .5rem solid #1e2429;
 }
 
@@ -232,7 +232,7 @@ a:hover {
   align-items: center;
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
-  background-color: #e9f1f9;
+  background-color: #f2f7fb;
   border: 0;
   border-radius: 2px;
 }
