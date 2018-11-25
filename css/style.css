@@ -164,13 +164,12 @@ a:hover {
 
 /* Footer */
 .bottom-bar {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .5rem;
   color: var(--white);
   background-color: #1e2429;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .bottom-bar {
     padding-bottom: .5rem;
   }
