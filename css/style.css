@@ -10,6 +10,7 @@
 /* Variables */
 :root {
   --primary: #083352;
+  --secondary: #15b7dc;
 }
 
 /* General */
@@ -56,11 +57,12 @@ h1 {
 }
 
 a {
-  color: var(--primary);
+  color: var(--secondary);
   text-decoration: none;
 }
 
 a:hover {
+  color: var(--secondary);
   text-decoration: underline;
 }
 
@@ -96,10 +98,12 @@ a:hover {
   padding: 1rem 1.5rem;
   background-color: #ff6278;
   border: 0;
+  transition: 0;
 }
 
 .btn:hover {
-  background-color: #FF4757;
+  color: var(--white);
+  background-color: #dc4257;
   text-decoration: none;
 }
 
@@ -159,10 +163,6 @@ a:hover {
 }
 
 /* Footer */
-.footer a {
-  color: var(--white);
-}
-
 .bottom-bar {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -174,6 +174,10 @@ a:hover {
   .bottom-bar {
     padding-bottom: .5rem;
   }
+}
+
+.bottom-bar a {
+  color: var(--white);
 }
 
 .bottom-bar .copyright { 
@@ -337,8 +341,7 @@ a:hover {
 
 .skill-icon i {
   font-size: 1.5rem;
-  color: var(--primary);
-  opacity: .8;
+  color: var(--secondary);
 }
 
 .skill-title {
@@ -457,11 +460,7 @@ a:hover {
 }
 
 .section#contact .section-title {
-  font-weight: 400;
-}
-
-.section#contact a {
-  color: var(--white);
+  font-weight: 600;
 }
 
 .contact-img {
