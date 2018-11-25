@@ -7,6 +7,11 @@
  * http://nelsonreitz.ch
  */
 
+/* Variables */
+:root {
+  --primary: #083352;
+}
+
 /* General */
 body {
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -40,7 +45,7 @@ h1 {
 }
 
 a {
-  color: #083352;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -178,23 +183,13 @@ a:hover {
   height: 40rem;
   position: relative;
   padding: 0 0 6.5rem;
-  margin-top: -4.5rem;
+  margin-top: -3.5rem;
   margin-bottom: 0;
-  background-color: #083352;
+  background-color: var(--primary);
   background-image: url('../img/1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0;
-}
-
-.jumbotron:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #083352;
-  opacity: 0.6;
 }
 
 .jumbotron-text {
@@ -233,7 +228,7 @@ a:hover {
 .about-img {
   width: 100%;
   height: 100%;
-  background-color: #083352;
+  background-color: var(--primary);
 }
 
 /* Skills */
@@ -258,7 +253,7 @@ a:hover {
 
 .skill-icon i {
   font-size: 1.5rem;
-  color: #083352;
+  color: var(--primary);
   opacity: .8;
 }
 
@@ -337,15 +332,15 @@ a:hover {
   margin-right: auto;
   margin-bottom: 1rem;
   margin-left: auto;
-  color: #083352;
+  color: var(--primary);
 }
 
 #invision-icon {
-  fill: #083352;
+  fill: var(--primary);
 }
 
 #figma-icon {
-  fill: #083352;
+  fill: var(--primary);
 }
 
 .tool-title {
@@ -357,7 +352,7 @@ a:hover {
   padding-top: 6.5rem;
   padding-bottom: 9rem;
   color: var(--white);
-  background-color: #083352;
+  background-color: var(--primary);
 }
 
 .section#contact .section-title {
