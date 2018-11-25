@@ -147,19 +147,16 @@ a:hover {
   text-decoration: none;
 }
 
-.nav {
-  display: flex;
+.header-btn {
+  padding: calc(.5rem - 2px) 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255,.4);
+  border-radius: 2rem;
 }
 
-.nav-link {
-  color: var(--white);
-  line-height: 1.5;
-  padding: .5rem 1rem;
-}
-
-.nav-link:hover {
-  color: var(--white);
-  text-decoration: underline;
+.header-btn:hover {
+  background-color: rgba(255,255,255,.2);
 }
 
 /* Footer */
@@ -234,7 +231,7 @@ a:hover {
   height: 30rem;
   position: relative;
   padding: 0 0 5rem;
-  margin-top: -3.5rem;
+  margin-top: -4rem;
   margin-bottom: 0;
   background-color: var(--primary);
   background-image: url('../img/1.jpg');
