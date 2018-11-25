@@ -17,7 +17,12 @@ body {
   font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
   background-color: #fff;
-  border: .5rem solid #1e2429;
+}
+
+@media (min-width: 576px) {
+  body {
+    border: .5rem solid #1e2429;
+  }
 }
 
 img {
@@ -38,10 +43,16 @@ h1 {
 
 .section h3 {
   padding-bottom: .5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   border-bottom: 1px solid #dee3e8;
+}
+
+@media (min-width: 576px) {
+  .section h3 {
+    margin-top: 4rem;
+  }
 }
 
 a {
@@ -97,6 +108,12 @@ a:hover {
   font-size: 1.25rem;
 }
 
+@media (max-width: 576px) {
+  .contact-btn {
+    width: 100%;
+  }
+}
+
 .contact-btn i {
   margin-right: .5rem;
   font-size: 1.25rem;
@@ -144,9 +161,15 @@ a:hover {
 /* Footer */
 .bottom-bar {
   padding-top: 1rem;
-  padding-bottom: .5rem;
+  padding-bottom: 1rem;
   color: var(--white);
   background-color: #1e2429;
+}
+
+@media (min-width: 576px) {
+  .bottom-bar {
+    padding-bottom: .5rem;
+  }
 }
 
 .bottom-bar p { 
@@ -180,9 +203,9 @@ a:hover {
 .jumbotron {
   display: flex;
   align-items: flex-end;
-  height: 40rem;
+  height: 30rem;
   position: relative;
-  padding: 0 0 6.5rem;
+  padding: 0 0 5rem;
   margin-top: -3.5rem;
   margin-bottom: 0;
   background-color: var(--primary);
@@ -192,32 +215,68 @@ a:hover {
   border-radius: 0;
 }
 
+@media (min-width: 576px) {
+  .jumbotron {
+    height: 40rem;
+    padding-bottom: 6.5rem;
+  }
+}
+
 .jumbotron-text {
   position: relative;
   margin-bottom: 0;
-  line-height: 1.3;
   color: var(--white);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .jumbotron-text {
+    font-size: 3rem;
+  }
 }
 
 /* Content */
 .content {
-  padding-top: 2.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 576px) {
+  .content {
+    padding-bottom: 2.5rem;
+    padding-bottom: 3.5rem;
+  }
 }
 
 .section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 576px) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 .card-list {
-  margin-bottom: -2rem;
+  margin-bottom: -1rem;
 }
 
 .card-list .card {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+  .card-list {
+    margin-bottom: -2rem;
+  }
+
+  .card-list .card {
+    margin-bottom: 2rem;
+  }
 }
 
 /* About */
@@ -312,11 +371,21 @@ a:hover {
 
 /* Tools */
 .tool-list {
-  margin-bottom: -4rem;
+  margin-bottom: -3rem;
 }
 
 .tool-list .tool-card {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 576px) {
+  .tool-list {
+    margin-bottom: -4rem;
+  }
+
+  .tool-list .tool-card {
+    margin-bottom: 4rem;
+  }
 }
 
 .tool-card {
@@ -330,7 +399,7 @@ a:hover {
   display: block;
   font-size: 3rem;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   margin-left: auto;
   color: var(--primary);
 }
@@ -349,10 +418,17 @@ a:hover {
 
 /* Contact */
 .section#contact {
-  padding-top: 6.5rem;
-  padding-bottom: 9rem;
+  padding-top: 3.5rem;
+  padding-bottom: 4.5rem;
   color: var(--white);
   background-color: var(--primary);
+}
+
+@media (min-width: 576px) {
+  .section#contact {
+    padding-top: 6.5rem;
+    padding-bottom: 9rem;
+  }
 }
 
 .section#contact .section-title {
