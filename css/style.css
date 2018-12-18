@@ -98,7 +98,6 @@ a:hover {
   padding: 1rem 1.5rem;
   background-color: #ff6278;
   border: 0;
-  transition: 0;
 }
 
 .btn:hover {
@@ -156,7 +155,8 @@ a:hover {
 }
 
 .header-btn:hover {
-  background-color: rgba(255,255,255,.2);
+  color: #333;
+  background-color: #fff;
 }
 
 /* Footer */
