@@ -83,7 +83,16 @@ a:hover {
 
 /* Layout */
 .container {
+  max-width: 960px;
+}
+
+.content .container,
+.footer .container {
   max-width: 800px;
+}
+
+.bottom-bar .container {
+  max-width: 960px;
 }
 
 /* Elements */
