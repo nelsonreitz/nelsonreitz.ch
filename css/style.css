@@ -297,7 +297,8 @@ a:hover {
 /* About */
 @media (min-width: 576px) {
   .featured-text {
-    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
     line-height: 1.5;
   }
 }
