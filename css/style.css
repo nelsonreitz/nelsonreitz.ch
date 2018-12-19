@@ -20,12 +20,6 @@ body {
   background-color: #fff;
 }
 
-@media (min-width: 576px) {
-  body {
-    border: .5rem solid #1e2429;
-  }
-}
-
 img {
   max-width: 100%;
 }
@@ -162,14 +156,9 @@ a:hover {
 /* Footer */
 .bottom-bar {
   padding-top: .5rem;
+  padding-bottom: .5rem;
   color: var(--white);
   background-color: #1e2429;
-}
-
-@media (max-width: 576px) {
-  .bottom-bar {
-    padding-bottom: .5rem;
-  }
 }
 
 .bottom-bar a {
