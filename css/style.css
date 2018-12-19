@@ -295,9 +295,11 @@ a:hover {
 }
 
 /* About */
-.featured-text {
-  font-size: 1.5rem;
-  line-height: 1.5;
+@media (min-width: 576px) {
+  .featured-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 }
 
 .about-img {
