@@ -232,11 +232,14 @@ a:hover {
   margin-top: -4rem;
   margin-bottom: 0;
   background-color: var(--primary);
-  background-image: url('../img/jumbotron-bg.jpg');
   background-image: url('../img/jumbotron-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0;
+}
+
+.nowebp .jumbotron {
+  background-image: url('../img/jumbotron-bg.jpg');
 }
 
 @media (min-width: 576px) {
