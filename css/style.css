@@ -254,12 +254,15 @@ a:hover {
   margin-bottom: 0;
   color: var(--white);
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.125;
+  letter-spacing: .01em;
 }
 
 @media (min-width: 576px) {
   .jumbotron-text {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
