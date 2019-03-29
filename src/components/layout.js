@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 
 import Header from "./header"
 import "./reset.css"
+import "./global-styles.css"
 import "./layout.css"
 
 const Layout = ({ children }) => (
