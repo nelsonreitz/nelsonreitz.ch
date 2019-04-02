@@ -15,10 +15,8 @@ import "./layout.css"
 
 const Layout = ({ children }) => (
   <>
-    <div className="container">
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <main>{children}</main>
+    <Footer />
   </>
 )
 

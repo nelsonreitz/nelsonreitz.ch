@@ -1,0 +1,9 @@
+@value variables: "./variables.css";
+@value primary from variables;
+
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  color: #fff;
+  background-color: primary;
+}
