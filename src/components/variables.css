@@ -1,0 +1,9 @@
+/* Colors */
+@value primary: #083352;
+@value secondary: #15b7dc;
+
+/* Media queries breakpoints */
+@value sm: 576px;
+@value md: 768px;
+@value lg: 992px;
+@value xl: 1200px;
