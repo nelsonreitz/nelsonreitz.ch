@@ -1,5 +1,5 @@
 import React from "react"
-import { 
+import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
@@ -9,8 +9,9 @@ import {
   FaWordpressSimple,
   FaGithub,
 } from 'react-icons/fa'
-import { 
-  DiGit, DiBootstrap
+import {
+  DiGit,
+  DiBootstrap
 } from 'react-icons/di'
 import styles from "./toolList.module.css"
 
