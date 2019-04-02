@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import Section from "../components/section"
 import SkillCard from "../components/skillCard"
-import { FaFileCode } from 'react-icons/fa'
+import { FaFileCode, FaUserFriends, FaDesktop, FaArrowsAltH, FaSitemap, FaAtom, FaUniversalAccess, FaMousePointer, FaPalette, FaFont, FaPencilAlt } from 'react-icons/fa'
 
 const IndexPage = () => (
   <Layout>
@@ -13,7 +13,17 @@ const IndexPage = () => (
     <Jumbotron />
 
     <Section title="My work">
-      <SkillCard title="Front-end development"><FaFileCode /></SkillCard>
+      <SkillCard title="Front-end Development"><FaFileCode /></SkillCard>
+      <SkillCard title="UX Design"><FaUserFriends /></SkillCard>
+      <SkillCard title="UI Design"><FaDesktop /></SkillCard>
+      <SkillCard title="Responsive Design"><FaArrowsAltH/></SkillCard>
+      <SkillCard title="Information Architecture"><FaSitemap /></SkillCard>
+      <SkillCard title="Design Systems"><FaAtom /></SkillCard>
+      <SkillCard title="Accessibility"><FaUniversalAccess /></SkillCard>
+      <SkillCard title="Interaction Design"><FaMousePointer /></SkillCard>
+      <SkillCard title="Brand Identity"><FaPalette /></SkillCard>
+      <SkillCard title="Typography"><FaFont /></SkillCard>
+      <SkillCard title="Micro Copywriting"><FaPencilAlt /></SkillCard>
     </Section>
 
     <Section title="The tools I use">
