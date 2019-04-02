@@ -7,7 +7,7 @@ import Section from "../components/section"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Front-end Design and Development" keywords={[`gatsby`, `application`, `react`]} />
     <Jumbotron />
 
     <Section title="My work">
