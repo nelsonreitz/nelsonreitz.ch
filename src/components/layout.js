@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./reset.css"
 import "./global-styles.css"
 import "./layout.css"
@@ -18,11 +19,7 @@ const Layout = ({ children }) => (
     <Header siteTitle="Nelson Reitz" />
     <div className="container">
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <Footer />
     </div>
   </>
 )
