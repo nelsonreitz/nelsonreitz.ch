@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import Section from "../components/section"
+import SkillCard from "../components/skillCard"
+import { FaFileCode } from 'react-icons/fa'
 
 const IndexPage = () => (
   <Layout>
@@ -11,7 +13,7 @@ const IndexPage = () => (
     <Jumbotron />
 
     <Section title="My work">
-      content
+      <SkillCard title="Front-end development"><FaFileCode /></SkillCard>
     </Section>
 
     <Section title="The tools I use">
