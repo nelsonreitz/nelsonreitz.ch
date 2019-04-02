@@ -1,0 +1,48 @@
+@value variables: "./variables.css";
+@value primary from variables;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -2.5rem;
+  margin-bottom: -2rem;
+  margin-left: -2.5rem;
+}
+
+.row .col {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+  width: 16.66667%;
+}
+
+.list-title {
+  padding-bottom: .5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-bottom: 1px solid #dee3e8;
+}
+
+.list-title:not(:first-of-type) {
+  margin-top: 4rem;
+}
+
+.tool-card {
+  text-align: center;
+}
+
+.tool-card .title {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.tool-card svg {
+  margin-right: auto;
+  margin-bottom: .5rem;
+  margin-left: auto;
+  font-size: 3rem;
+  fill: primary;
+}

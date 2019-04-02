@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import Section from "../components/section"
 import SkillList from "../components/skillList"
+import ToolList from "../components/toolList"
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +17,7 @@ const IndexPage = () => (
     </Section>
 
     <Section title="The tools I use">
-      Tools content
+      <ToolList />
     </Section>
   </Layout>
 )

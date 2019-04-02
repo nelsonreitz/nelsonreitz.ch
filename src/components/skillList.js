@@ -29,7 +29,7 @@ const SkillList = () => (
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="Responsive Design"><FaArrowsAltH/></SkillCard>
+      <SkillCard title="Responsive Design"><FaArrowsAltH /></SkillCard>
     </div>
 
     <div className={styles.col}>
