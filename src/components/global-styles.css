@@ -1,3 +1,6 @@
+@value variables: "./variables.css";
+@value text from variables;
+
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
 html {
@@ -6,6 +9,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: text;
 }
 
 h1,

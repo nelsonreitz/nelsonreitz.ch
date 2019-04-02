@@ -1,6 +1,7 @@
 /* Colors */
 @value primary: #083352;
 @value secondary: #15b7dc;
+@value text: #333;
 
 /* Media queries breakpoints */
 @value sm: 576px;
