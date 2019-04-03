@@ -27,3 +27,19 @@ p {
   line-height: 1.75;
 }
 
+p a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+p a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: -5px;
+  background-color: grey;
+  transition: background-color .05s ease-in-out;
+}
+

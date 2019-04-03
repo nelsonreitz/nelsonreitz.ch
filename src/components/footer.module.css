@@ -1,9 +1,22 @@
 @value variables: "./variables.css";
-@value primary from variables;
+@value primary, secondary from variables;
 
 .footer {
   padding-top: 4rem;
   padding-bottom: 8rem;
   color: #fff;
   background-color: primary;
+}
+
+.footer p a {
+  font-weight: 600;
+  color: secondary;
+}
+
+.footer p a:after {
+  background-color: #13687c;
+}
+
+.footer p a:hover:after {
+  background-color: secondary;
 }
