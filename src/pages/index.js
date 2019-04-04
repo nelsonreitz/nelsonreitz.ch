@@ -13,7 +13,7 @@ const IndexPage = () => (
     <Jumbotron />
 
     <Section title="My work">
-      <p>My goal is to build clean, responsive user interfaces with a focus on usability. Embracing the duality between my design background and my passion for web development, I feel comfortable working on the whole spectrum of UI development.</p>
+      <p>My goal is to build clean, responsive user interfaces with a focus on usability. Embracing the duality between my design background and my passion for software development and user experience, I feel comfortable working on the whole spectrum of UI development.</p>
       <SkillList />
     </Section>
 
