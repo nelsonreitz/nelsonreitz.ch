@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Footer from "./footer"
-import "./reset.css"
+import "./sanitize.css"
 import "./global-styles.css"
 import "./layout.css"
 
