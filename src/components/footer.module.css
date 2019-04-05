@@ -8,6 +8,12 @@
   background-color: primary;
 }
 
+.footer .section-title {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  line-height: 1.125;
+}
+
 .footer p a {
   font-weight: 600;
   color: secondary;
