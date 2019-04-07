@@ -1,0 +1,30 @@
+@value variables: "./variables.css";
+@value text from variables;
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+.social-link {
+  padding: 1rem 1.5rem;
+  color: text;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #000;
+}
+
+.social-link svg {
+  color: #9faebd;
+  vertical-align: top;
+  margin-right: .5rem;
+}
+
+.social-link:hover svg {
+  color: text;
+}

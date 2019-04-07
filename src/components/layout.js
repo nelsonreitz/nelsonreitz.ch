@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Topbar from "./topbar"
 import Footer from "./footer"
 import "./sanitize.css"
 import "./global-styles.css"
@@ -15,6 +16,7 @@ import "./layout.css"
 
 const Layout = ({ children }) => (
   <>
+    <Topbar />
     <main>{children}</main>
     <Footer />
   </>
