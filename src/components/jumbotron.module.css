@@ -1,4 +1,26 @@
+@value variables: "./variables.css";
+@value primary from variables;
+
 .jumbotron {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
+.jumbotron p {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.jumbotron .emoji {
+  vertical-align: middle;
+}
+
+.jumbotron a {
+  font-size: 1.5rem;
+  color: primary;
 }
