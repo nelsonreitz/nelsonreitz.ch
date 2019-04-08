@@ -28,3 +28,7 @@
 .social-link:hover svg {
   color: text;
 }
+
+.social-link:hover span {
+  text-decoration: underline;
+}

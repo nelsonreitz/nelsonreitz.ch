@@ -11,7 +11,8 @@ const Topbar = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaGithub /> Github
+      <FaGithub />
+      <span className={styles.label}>Github</span>
     </a>
 
     <a
@@ -20,7 +21,8 @@ const Topbar = () => (
       target="_blank" 
       rel="noopener noreferrer"
       >
-      <FaTwitter /> Twitter
+      <FaTwitter />
+      <span className={styles.label}>Twitter</span>
     </a>
 
     <a
@@ -29,7 +31,8 @@ const Topbar = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaLinkedinIn /> LinkedIn
+      <FaLinkedinIn />
+      <span className={styles.label}>LinkedIn</span>
     </a>
   </div>
 )
