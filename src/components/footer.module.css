@@ -2,8 +2,8 @@
 @value primary, secondary from variables;
 
 .footer {
-  padding-top: 4rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
   color: #fff;
   background-color: primary;
 }
