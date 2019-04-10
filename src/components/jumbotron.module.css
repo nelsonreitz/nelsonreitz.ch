@@ -1,8 +1,8 @@
 @value variables: "./variables.css";
-@value primary from variables;
+@value text, primary from variables;
 
 .jumbotron {
-  padding-top: 8rem;
+  padding-top: 10vh;
   padding-bottom: 8rem;
 }
 
@@ -16,11 +16,26 @@
   line-height: 1.5;
 }
 
+.jumbotron p a {
+  color: text;
+  text-decoration-color: rbga(0,0,0,.1);
+}
+
+.jumbotron p a:after {
+  margin-top: -.3em;
+  opacity: .33;
+}
+
+.jumbotron p a:hover:after {
+  margin-top: -.3em;
+  opacity: 1;
+}
+
 .jumbotron .emoji {
   vertical-align: middle;
 }
 
-.jumbotron a {
+.jumbotron .cta {
   font-size: 1.5rem;
   color: primary;
 }
