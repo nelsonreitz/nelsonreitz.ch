@@ -1,7 +1,9 @@
 import React from "react"
-
-import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 import styles from "./topbar.module.css"
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 const Topbar = () => (
   <div className={styles.topbar}>
@@ -11,7 +13,7 @@ const Topbar = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaGithub />
+      <FontAwesomeIcon icon={[`fab`, `github`]} />
       <span className={styles.label}>Github</span>
     </a>
 
@@ -21,7 +23,7 @@ const Topbar = () => (
       target="_blank" 
       rel="noopener noreferrer"
       >
-      <FaTwitter />
+      <FontAwesomeIcon icon={[`fab`, `twitter`]} />
       <span className={styles.label}>Twitter</span>
     </a>
 
@@ -31,10 +33,13 @@ const Topbar = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FaLinkedinIn />
+      <FontAwesomeIcon icon={[`fab`, `linkedin-in`]} />
       <span className={styles.label}>LinkedIn</span>
     </a>
   </div>
 )
+
+// Register FontAwesome icons
+library.add(faGithub, faTwitter, faLinkedinIn)
 
 export default Topbar

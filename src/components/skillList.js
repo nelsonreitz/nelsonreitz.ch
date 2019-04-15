@@ -1,63 +1,57 @@
 import React from "react"
-import { 
-  FaFileCode,
-  FaUserFriends,
-  FaDesktop,
-  FaArrowsAltH,
-  FaSitemap,
-  FaAtom,
-  FaUniversalAccess,
-  FaMousePointer,
-  FaPalette,
-  FaFont,
-  FaPencilAlt
-} from 'react-icons/fa'
 import styles from "./skillList.module.css"
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faFileCode, faUserFriends, faDesktop, faArrowsAltH, faSitemap,
+  faAtom, faUniversalAccess, faMousePointer, faPalette, faFont, faPencilAlt
+} from '@fortawesome/free-solid-svg-icons'
 
 const SkillList = () => (
   <div className={styles.row}>
     <div className={styles.col}>
-      <SkillCard title="Front-end Development"><FaFileCode /></SkillCard>
+      <SkillCard title="Front-end Development"><FontAwesomeIcon icon="file-code" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="UX Design"><FaUserFriends /></SkillCard>
+      <SkillCard title="UX Design"><FontAwesomeIcon icon="user-friends" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="UI Design"><FaDesktop /></SkillCard>
+      <SkillCard title="UI Design"><FontAwesomeIcon icon="desktop" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="Responsive Design"><FaArrowsAltH /></SkillCard>
+      <SkillCard title="Responsive Design"><FontAwesomeIcon icon="arrows-alt-h" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="Information Architecture"><FaSitemap /></SkillCard>
+      <SkillCard title="Information Architecture"><FontAwesomeIcon icon="sitemap" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="Design Systems"><FaAtom /></SkillCard>
+      <SkillCard title="Design Systems"><FontAwesomeIcon icon="atom" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="Accessibility"><FaUniversalAccess /></SkillCard>
+      <SkillCard title="Accessibility"><FontAwesomeIcon icon="universal-access" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="Interaction Design"><FaMousePointer /></SkillCard>
+      <SkillCard title="Interaction Design"><FontAwesomeIcon icon="mouse-pointer" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="Brand Identity"><FaPalette /></SkillCard>
+      <SkillCard title="Brand Identity"><FontAwesomeIcon icon="palette" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="Typography"><FaFont /></SkillCard>
+      <SkillCard title="Typography"><FontAwesomeIcon icon="font" /></SkillCard>
     </div>
 
     <div className={styles.col}>
-      <SkillCard title="Micro Copywriting"><FaPencilAlt /></SkillCard>
+      <SkillCard title="Micro Copywriting"><FontAwesomeIcon icon="pencil-alt" /></SkillCard>
     </div>
   </div>
 )
@@ -67,6 +61,11 @@ const SkillCard = ({ children, title }) => (
     {children}
     <h3 className={styles.title}>{title}</h3>
   </div>
+)
+
+library.add(
+  faFileCode, faUserFriends, faDesktop, faArrowsAltH, faSitemap,
+  faAtom, faUniversalAccess, faMousePointer, faPalette, faFont, faPencilAlt
 )
 
 export default SkillList 
