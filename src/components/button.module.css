@@ -5,13 +5,11 @@
   font-weight: 700;
   color: #fff;
   text-decoration: none;
-  border: 1px solid #fc7689;
   border-radius: 4px;
   background-color: #ec4a61;
-  transition: background-color .1s ease-in-out, border-color .1s ease-in-out;
+  transition: background-color .1s ease-in-out;
 }
 
 .btn:hover {
-  border-color: #f25267;
   background-color: #c92a3f;
 }
