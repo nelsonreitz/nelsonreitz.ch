@@ -2,7 +2,7 @@
 @value text, primary from variables;
 
 .jumbotron {
-  padding-top: 10vh;
+  padding-top: 8vh;
   padding-bottom: 8rem;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .jumbotron p {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -36,11 +36,16 @@
   vertical-align: middle;
 }
 
+.jumbotron em {
+  font-style: initial;
+  color: #8045c0;
+}
+
 .jumbotron .cta {
   display: inline-block;
-  padding: 1.25rem 3rem;
-  font-size: 1.125rem;
-  font-weight: 700;
+  padding: 1.5rem 3.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
