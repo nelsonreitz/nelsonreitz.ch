@@ -9,6 +9,9 @@ import {
   faInvision, faAdobe, faFigma
 } from '@fortawesome/free-brands-svg-icons'
 
+import GatsbyLogo from "../tools/logo-gatsby.svg"
+import NetlifyLogo from "../tools/logo-netlify.svg"
+
 const ToolList = () => (
   <>
     <h3 className={styles.listTitle}>Web Development</h3>
@@ -34,7 +37,7 @@ const ToolList = () => (
       </div>
 
       <div className={styles.col}>
-        <ToolCard title="Gatsby"><FontAwesomeIcon icon={[`fab`, `js`]} /></ToolCard>
+        <ToolCard title="Gatsby"><GatsbyLogo /></ToolCard>
       </div>
 
       <div className={styles.col}>
@@ -55,6 +58,10 @@ const ToolList = () => (
 
       <div className={styles.col}>
         <ToolCard title="Git"><FontAwesomeIcon icon={[`fab`, `git`]} /></ToolCard>
+      </div>
+
+      <div className={styles.col}>
+        <ToolCard title="Netlify"><NetlifyLogo /></ToolCard>
       </div>
     </div>
 
