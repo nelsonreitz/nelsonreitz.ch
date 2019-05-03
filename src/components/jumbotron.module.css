@@ -1,5 +1,6 @@
 @value variables: "./variables.css";
 @value text, primary from variables;
+@value sm, md, lg, xl from variables;
 
 .jumbotron {
   padding-top: 8vh;
@@ -7,14 +8,28 @@
 }
 
 .jumbotron h1 {
-  margin-bottom: 2rem;
-  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: sm) {
+  .jumbotron h1 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+  }
 }
 
 .jumbotron p {
-  margin-bottom: 2.5rem;
-  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
   line-height: 1.5;
+}
+
+@media screen and (min-width: sm) {
+  .jumbotron p {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+  }
 }
 
 .jumbotron p a {
