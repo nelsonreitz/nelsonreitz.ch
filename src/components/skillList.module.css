@@ -12,8 +12,15 @@
 
 @media screen and (min-width: sm) {
   .row {
-    margin-right: -2.5rem;
+    margin-right: -1rem;
     margin-bottom: -2rem;
+    margin-left: -1rem;
+  }
+}
+
+@media screen and (min-width: lg) {
+  .row {
+    margin-right: -2.5rem;
     margin-left: -2.5rem;
   }
 }
