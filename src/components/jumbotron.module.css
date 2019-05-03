@@ -4,7 +4,13 @@
 
 .jumbotron {
   padding-top: 8vh;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: sm) {
+  .jumbotron {
+    paddint-bottom: 8rem;
+  }
 }
 
 .jumbotron h1 {

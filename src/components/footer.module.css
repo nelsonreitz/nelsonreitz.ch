@@ -1,17 +1,31 @@
 @value variables: "./variables.css";
 @value primary, secondary from variables;
+@value sm, md, lg, xl from variables;
 
 .footer {
-  padding-top: 6rem;
-  padding-bottom: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
   color: #fff;
   background-color: primary;
 }
 
+@media screen and (min-width: sm) {
+  .footer {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+  }
+}
+
 .footer .section-title {
   margin-bottom: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.125;
+}
+
+@media screen and (min-width: sm) {
+  .footer .section-title {
+    font-size: 2.5rem;
+  }
 }
 
 .footer p a {
