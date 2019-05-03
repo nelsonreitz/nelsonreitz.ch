@@ -1,24 +1,43 @@
 @value variables: "./variables.css";
 @value primary from variables;
+@value sm, md, lg, xl from variables;
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -2.5rem;
-  margin-bottom: -2rem;
-  margin-left: -2.5rem;
+  margin-right: -1rem;
+  margin-bottom: -3rem;
+  margin-left: -1rem;
 }
 
 .row .col {
   padding-right: 1rem;
   padding-left: 1rem;
   margin-bottom: 3rem;
-  width: 16.66667%;
+  width: 33.33333%;
+}
+
+@media screen and (min-width: sm) {
+  .row .col {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: md) {
+  .row .col {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: lg) {
+  .row .col {
+    width: 16.66667%;
+  }
 }
 
 .list-title {
   padding-bottom: 1rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   font-size: 1.125rem;
   font-weight: 400;
