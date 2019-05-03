@@ -1,22 +1,41 @@
 @value variables: "./variables.css";
 @value text from variables;
+@value sm, md, lg, xl from variables;
 
 .topbar {
   display: flex;
-  justify-content: flex-end;
   padding-right: .5rem;
   padding-left: .5rem;
 }
 
+@media screen and (min-width: sm) {
+  .topbar {
+    justify-content: flex-end;
+  }
+}
+
 .social-link {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   color: text;
   font-weight: 600;
   text-decoration: none;
 }
 
+@media screen and (min-width: sm) {
+  .social-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
 .social-link:hover {
   color: #000;
+}
+
+@media screen and (max-width: sm) {
+  .social-link svg {
+    display: none;
+  }
 }
 
 .social-link svg {
