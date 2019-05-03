@@ -1,5 +1,6 @@
 @value variables: "./variables.css";
 @value text from variables;
+@value sm, md, lg, xl from variables;
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
@@ -24,9 +25,17 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 2.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.375rem;
   line-height: 1.75;
+  hyphens: auto;
+}
+
+@media screen and (min-width: sm) {
+  p {
+    margin-bottom: 2.5rem;
+    hyphens: initial;
+  }
 }
 
 p a {
