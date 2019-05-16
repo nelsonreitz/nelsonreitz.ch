@@ -9,13 +9,6 @@
   background-color: primary;
 }
 
-@media screen and (min-width: sm) {
-  .footer {
-    padding-top: 6rem;
-    padding-bottom: 10rem;
-  }
-}
-
 .footer .section-title {
   margin-bottom: 1.5rem;
   font-size: 2rem;
