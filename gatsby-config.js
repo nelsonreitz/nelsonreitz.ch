@@ -4,7 +4,7 @@ module.exports = {
     description: `Swiss Front-end Developer and Designer based in Lausanne, passionate about modern web development, JAMstack, user experience (UX) and user interfaces (UI).`,
     author: `Nelson Reitz`,
     url: `https://nelsonreitz.ch`,
-    image: `/images/preview.png`,
+    image: `/static/images/preview.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
