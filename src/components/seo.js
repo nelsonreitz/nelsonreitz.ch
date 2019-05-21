@@ -57,12 +57,16 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
-          name: `image`,
+          property: `og:image`,
           content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
         },
         {
           name: `twitter:card`,
           content: `summary`,
+        },
+        {
+          name: `twitter:image`,
+          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
         },
         {
           name: `twitter:creator`,
