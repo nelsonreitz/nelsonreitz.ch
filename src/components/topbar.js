@@ -29,7 +29,7 @@ const Topbar = () => (
 
     <a
       className={styles.socialLink}
-      href="//linkedin.com/nelsonreitz"
+      href="//linkedin.com/in/nelsonreitz"
       target="_blank"
       rel="noopener noreferrer"
     >
