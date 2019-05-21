@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Nelson Reitz`,
-    description: `Swiss Front-end Developer and Designer based in Lausanne, passionate about modern web development, JAMstack, user experience (UX) and user interfaces (UI)`,
+    description: `Swiss Front-end Developer and Designer based in Lausanne, passionate about modern web development, JAMstack, user experience (UX) and user interfaces (UI).`,
     author: `Nelson Reitz`,
   },
   plugins: [

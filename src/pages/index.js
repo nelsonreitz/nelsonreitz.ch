@@ -9,7 +9,7 @@ import ToolList from "../components/toolList"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Front-end Design and Development" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Nelson Reitz | Swiss Front-end Developer" keywords={[`Front-end Developer`, `Lausanne`, `UX Designer`, `JAMstack`]} />
     <Jumbotron />
 
     <Section title="My work">
