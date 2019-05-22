@@ -41,6 +41,8 @@
 .social-link svg {
   color: #9faebd;
   vertical-align: top;
+  width: 1rem;
+  height: 1rem;
   margin-right: .5rem;
 }
 
