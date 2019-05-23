@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "./button"
-import styles from "./footer.module.css"
+import styles from "../styles/footer.module.css"
 
 const Footer = () => (
   <footer className={styles.footer}>

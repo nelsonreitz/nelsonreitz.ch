@@ -10,9 +10,9 @@ import PropTypes from "prop-types"
 
 import Topbar from "./topbar"
 import Footer from "./footer"
-import "./sanitize.css"
-import "./global-styles.css"
-import "./layout.css"
+import "../styles/sanitize.css"
+import "../styles/global-styles.css"
+import "../styles/layout.css"
 
 const Layout = ({ children }) => (
   <>

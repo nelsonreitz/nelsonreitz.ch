@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./jumbotron.module.css"
+import styles from "../styles/jumbotron.module.css"
 
 const Jumbotron = () => (
   <div className={styles.jumbotron}>

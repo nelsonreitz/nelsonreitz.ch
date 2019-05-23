@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./topbar.module.css"
+import styles from "../styles/topbar.module.css"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

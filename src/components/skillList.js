@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./skillList.module.css"
+import styles from "../styles/skillList.module.css"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
