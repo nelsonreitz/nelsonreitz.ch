@@ -1,3 +1,13 @@
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-wrapper main {
+  flex-grow: 1;
+}
+
 .container {
   max-width: 50rem;
   padding-right: 1rem;

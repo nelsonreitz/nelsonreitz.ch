@@ -15,11 +15,11 @@ import "../styles/global-styles.css"
 import "../styles/layout.css"
 
 const Layout = ({ children }) => (
-  <>
+  <div className="site-wrapper">
     <Topbar />
     <main>{children}</main>
     <Footer />
-  </>
+  </div>
 )
 
 Layout.propTypes = {
