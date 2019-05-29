@@ -1,0 +1,28 @@
+@value variables: "./variables.css";
+@value text, primary from variables;
+@value sm, md, lg, xl from variables;
+
+.post-link {
+  display: block;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 0;
+  color: text;
+  text-decoration: none;
+}
+
+.post-link:hover .title {
+  text-decoration: underline;
+  text-decoration-color: #537b98;
+}
+
+.post-link .title {
+  margin-bottom: 0;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.post-link .date {
+  margin-bottom: 0;
+  color: #537b98;
+}
