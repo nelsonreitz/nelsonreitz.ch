@@ -15,14 +15,16 @@ const IndexPage = ({ data }) => (
     <Jumbotron />
 
     <Section title="Blog posts">
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <PostLink 
-          key={node.id}
-          to={node.fields.slug}
-          title={node.frontmatter.title}
-          date={node.frontmatter.date}
-        />
-      ))}
+      <div className="blog-list">
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <PostLink 
+            key={node.id}
+            to={node.fields.slug}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+          />
+        ))}
+      </div>
     </Section>
 
     <Section title="My work">

@@ -4,16 +4,20 @@
 
 .post-link {
   display: block;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  margin-bottom: 0;
+  padding: 1rem 1.5rem;
   color: text;
   text-decoration: none;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: background-color .05s ease-in-out;
 }
 
-.post-link:hover .title {
-  text-decoration: underline;
-  text-decoration-color: #537b98;
+.post-link:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.post-link:hover {
+  background-color: #f2f7fb;
 }
 
 .post-link .title {
