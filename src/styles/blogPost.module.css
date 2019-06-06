@@ -1,0 +1,32 @@
+@value variables: "./variables.css";
+@value sm, md, lg, xl from variables;
+
+.blog-post {
+  padding-top: 10vh;
+  padding-bottom: 1.5rem;
+}
+
+.blog-post .title {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: sm) {
+  .blog-post .title {
+    font-size: 4rem;
+  }
+}
+
+.blog-post h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.125;
+}
+
+@media screen and (min-width: sm) {
+  .blog-post h2 {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+  }
+}
