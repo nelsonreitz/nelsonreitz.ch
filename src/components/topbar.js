@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styles from "../styles/topbar.module.css"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -7,6 +8,13 @@ import { faGithub, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-
 
 const Topbar = () => (
   <div className={styles.topbar}>
+    <Link
+      className={styles.siteTitle}
+      to="/"
+    >
+      Nelson Reitz
+    </Link>
+
     <a
       className={styles.socialLink}
       href="//github.com/nelsonreitz"

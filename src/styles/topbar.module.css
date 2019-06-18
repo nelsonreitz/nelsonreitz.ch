@@ -14,28 +14,28 @@
   }
 }
 
-.social-link {
-  padding: 1rem;
+.topbar a {
+  padding: 1rem .5rem;
   color: text;
   font-weight: 600;
   text-decoration: none;
 }
 
 @media screen and (min-width: sm) {
-  .social-link {
+  .topbar a {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
 }
 
-.social-link:hover {
+.topbar a:hover {
   color: #000;
+  text-decoration: underline;
 }
 
-@media screen and (max-width: sm) {
-  .social-link svg {
-    display: none;
-  }
+.site-title {
+  margin-right: auto;
+  text-transform: uppercase;
 }
 
 .social-link svg {
@@ -44,6 +44,12 @@
   width: 1rem;
   height: 1rem;
   margin-right: .5rem;
+}
+
+@media screen and (max-width: sm) {
+  .social-link span {
+    display: none;
+  }
 }
 
 .social-link:hover svg {
