@@ -3,7 +3,13 @@
 
 .blog-post {
   padding-top: 10vh;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: sm) {
+  .blog-post {
+    padding-bottom: 9.5rem;
+  }
 }
 
 .blog-post .title {
