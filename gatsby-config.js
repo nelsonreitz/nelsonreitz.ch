@@ -13,6 +13,7 @@ module.exports = {
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
+        ignore: process.env.NODE_ENV === `production` && [`**/draft-*`]
       },
     },
     `gatsby-transformer-sharp`,
