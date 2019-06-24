@@ -13,6 +13,7 @@ export default ({ data }) => {
       <div className="container">
         <div className={styles.blogPost}>
           <h1 className={styles.title}>{post.frontmatter.title}</h1>
+          <p className={styles.date}>{post.frontmatter.date}</p>
           <div
             className={styles.content}
             dangerouslySetInnerHTML={{ __html: post.html }}
@@ -30,6 +31,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "DD MMMM, YYYY")
       }
     }
   }
