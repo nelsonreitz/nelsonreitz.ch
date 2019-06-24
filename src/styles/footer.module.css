@@ -26,10 +26,6 @@
   color: secondary;
 }
 
-.footer p a:after {
-  background-color: #13687c;
-}
-
 .footer p a:hover:after {
   background-color: secondary;
 }
