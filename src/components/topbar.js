@@ -20,6 +20,7 @@ const Topbar = () => (
       href="//github.com/nelsonreitz"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Github"
     >
       <FontAwesomeIcon icon={[`fab`, `github`]} />
       <span className={styles.label}>Github</span>
@@ -30,6 +31,7 @@ const Topbar = () => (
       href="//twitter.com/nelsreitz"
       target="_blank" 
       rel="noopener noreferrer"
+      aria-label="Twitter"
       >
       <FontAwesomeIcon icon={[`fab`, `twitter`]} />
       <span className={styles.label}>Twitter</span>
@@ -40,6 +42,7 @@ const Topbar = () => (
       href="//linkedin.com/in/nelsonreitz"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="LinkedIn"
     >
       <FontAwesomeIcon icon={[`fab`, `linkedin-in`]} />
       <span className={styles.label}>LinkedIn</span>
