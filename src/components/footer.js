@@ -1,8 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
-import colors from "../tokens/colors"
-import mediaQueries from "../tokens/media-queries"
+import { colors, mediaQueries } from "../tokens"
 import Container from "./container"
 import Button from "./button"
 
