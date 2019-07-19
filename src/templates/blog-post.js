@@ -1,9 +1,43 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "@emotion/styled"
+import { colors, mediaQueries } from "../tokens"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import SEO from "../components/seo"
-import styles from "../styles/blogPost.module.css"
+
+const BlogPost = styled.div`
+  padding-top: 10vh;
+  padding-bottom: 2.5rem;
+  ${mediaQueries.sm} {
+    padding-bottom: 9.5rem;
+  }
+
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    line-height: 1.125;
+    ${mediaQueries.sm} {
+      margin-top: 4rem;
+      font-size: 2.5rem;
+    }
+  }
+`
+
+const Title = styled.h1`
+  margin-bottom: 0;
+  font-size: 3rem;
+  ${mediaQueries.sm} {
+    font-size: 4rem;
+  }
+`
+
+const Date = styled.p`
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: ${colors.mutedText};
+`
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -12,15 +46,11 @@ export default ({ data }) => {
     <Layout>
       <SEO title={pageTitle} />
       <Container>
-        <div className={styles.blogPost}>
-          <h1 className={styles.title}>{post.frontmatter.title}</h1>
-          <p className={styles.date}>{post.frontmatter.date}</p>
-          <div
-            className={styles.content}
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          >
-          </div>
-        </div>
+        <BlogPost>
+          <Title>{post.frontmatter.title}</Title>
+          <Date>{post.frontmatter.date}</Date>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </BlogPost>
       </Container>
     </Layout>
   )
