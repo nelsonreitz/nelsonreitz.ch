@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/core"
 import { colors, mediaQueries } from "../tokens"
 import { Link } from "gatsby"
-import SocialLink from "./socialLink"
+import SocialLink from "./social-link"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'

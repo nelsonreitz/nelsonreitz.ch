@@ -1,14 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import { mediaQueries } from "../tokens"
 import Section from "../components/section"
-import PostLink from "../components/postLink"
-import SkillList from "../components/skillList"
-import ToolList from "../components/toolList"
+import PostLink from "../components/post-link"
+import SkillList from "../components/skill-list"
+import ToolList from "../components/tool-list"
 
 const IndexPage = ({ data }) => (
   <Layout>
