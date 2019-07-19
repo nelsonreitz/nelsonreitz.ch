@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Container from "../components/container"
 import SEO from "../components/seo"
 import styles from "../styles/blogPost.module.css"
 
@@ -10,7 +11,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title={pageTitle} />
-      <div className="container">
+      <Container>
         <div className={styles.blogPost}>
           <h1 className={styles.title}>{post.frontmatter.title}</h1>
           <p className={styles.date}>{post.frontmatter.date}</p>
@@ -20,7 +21,7 @@ export default ({ data }) => {
           >
           </div>
         </div>
-      </div>
+      </Container>
     </Layout>
   )
 }
