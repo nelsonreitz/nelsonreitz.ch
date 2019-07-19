@@ -32,17 +32,18 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
           include: /tools/
         }
       }
     },
+    `gatsby-plugin-emotion`,
     {
-      resolve: 'gatsby-plugin-i18n',
+      resolve: `gatsby-plugin-i18n`,
       options: {
-        langKeyDefault: 'en',
+        langKeyDefault: `en`,
         useLangKeyLayout: false,
       }
     },
