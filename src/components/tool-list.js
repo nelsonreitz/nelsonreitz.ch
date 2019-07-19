@@ -1,6 +1,7 @@
 import React from "react"
-import styles from "../styles/toolList.module.css"
-
+import { css } from "@emotion/core"
+import styled from "@emotion/styled"
+import { colors, mediaQueries } from "../tokens"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -8,88 +9,152 @@ import {
   faSass, faWordpressSimple, faGithub, faGit, faSketch,
   faInvision, faAdobe, faFigma
 } from '@fortawesome/free-brands-svg-icons'
-
 import GatsbyLogo from "../tools/logo-gatsby.svg"
 import NetlifyLogo from "../tools/logo-netlify.svg"
 
+const Title = styled.h3`
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  border-bottom: 1px solid #dee3e8;
+`
+
+const Row = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -.5rem;
+  margin-bottom: -3rem;
+  margin-left: -.5rem;
+  ${mediaQueries.sm} {
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+`
+
+const Col = styled.div`
+  padding-right: .5rem;
+  padding-left: .5rem;
+  margin-bottom: 3rem;
+  width: 33.33333%;
+  ${mediaQueries.sm} {
+    width: 25%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  ${mediaQueries.md} {
+    width: 20%;
+  }
+  ${mediaQueries.lg} {
+    width: 16.66667%;
+  }
+`
+
 const ToolList = () => (
   <>
-    <h3 className={styles.listTitle}>Web Development</h3>
-    <div className={styles.row}>
-      <div className={styles.col}>
+    <Title>Web Development</Title>
+    <Row>
+      <Col>
         <ToolCard title="HTML"><FontAwesomeIcon icon={[`fab`, `html5`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="CSS"><FontAwesomeIcon icon={[`fab`, `css3-alt`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="JavaScript"><FontAwesomeIcon icon={[`fab`, `js`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="React"><FontAwesomeIcon icon={[`fab`, `react`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="Vue.js"><FontAwesomeIcon icon={[`fab`, `vuejs`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="Gatsby"><GatsbyLogo /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="Bootstrap"><FontAwesomeIcon icon={[`fab`, `bootstrap`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="Sass"><FontAwesomeIcon icon={[`fab`, `sass`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="WordPress"><FontAwesomeIcon icon={[`fab`, `wordpress-simple`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="Github"><FontAwesomeIcon icon={[`fab`, `github`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="Git"><FontAwesomeIcon icon={[`fab`, `git`]} /></ToolCard>
-      </div>
+      </Col>
 
-      <div className={styles.col}>
+      <Col>
         <ToolCard title="Netlify"><NetlifyLogo /></ToolCard>
-      </div>
-    </div>
+      </Col>
+    </Row>
 
-    <h3 className={styles.listTitle}>Web Design</h3>
-    <div className={styles.row}>
-      <div className={styles.col}>
-        <ToolCard title="Sketch"><FontAwesomeIcon icon={[`fab`, `sketch`]}  /></ToolCard>
-      </div>
+    <Title>Web Design</Title>
+    <Row>
+      <Col>
+        <ToolCard title="Sketch"><FontAwesomeIcon icon={[`fab`, `sketch`]} /></ToolCard>
+      </Col>
 
-      <div className={styles.col}>
-        <ToolCard title="InVision"><FontAwesomeIcon icon={[`fab`, `invision`]}  /></ToolCard>
-      </div>
+      <Col>
+        <ToolCard title="InVision"><FontAwesomeIcon icon={[`fab`, `invision`]} /></ToolCard>
+      </Col>
 
-      <div className={styles.col}>
-        <ToolCard title="Adobe CC"><FontAwesomeIcon icon={[`fab`, `adobe`]}  /></ToolCard>
-      </div>
+      <Col>
+        <ToolCard title="Adobe CC"><FontAwesomeIcon icon={[`fab`, `adobe`]} /></ToolCard>
+      </Col>
 
-      <div className={styles.col}>
-        <ToolCard title="Figma"><FontAwesomeIcon icon={[`fab`, `figma`]}  /></ToolCard>
-      </div>
-    </div>
+      <Col>
+        <ToolCard title="Figma"><FontAwesomeIcon icon={[`fab`, `figma`]} /></ToolCard>
+      </Col>
+    </Row>
   </>
 )
 
+const cardStyles = css`
+  text-align: center;
+
+  svg {
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    font-size: 3rem;
+    color: ${colors.primary};
+    fill: ${colors.primary};
+
+    path {
+      fill: ${colors.primary};
+    }
+  }
+`
+
+const CardTitle = styled.h4`
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.125;
+`
+
 const ToolCard = ({ children, title }) => (
-  <div className={styles.toolCard}>
+  <div css={cardStyles}>
     {children}
-    <h4 className={styles.title}>{title}</h4>
+    <CardTitle>{title}</CardTitle>
   </div>
 )
 
