@@ -58,15 +58,3 @@ p a:after {
 p a:hover:after {
   background-color: secondary;
 }
-
-.blog-list {
-  margin-right: -1rem;
-  margin-left: -1rem;
-}
-
-@media screen and (min-width: sm) {
-  .blog-list {
-    margin-right: -1.5rem;
-    margin-left: -1.5rem;
-  }
-}

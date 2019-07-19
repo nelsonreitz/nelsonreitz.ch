@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Jumbotron from "../components/jumbotron"
+import { mediaQueries } from "../tokens"
 import Section from "../components/section"
 import PostLink from "../components/postLink"
 import SkillList from "../components/skillList"
@@ -15,7 +16,16 @@ const IndexPage = ({ data }) => (
     <Jumbotron />
 
     <Section title="Blog posts">
-      <div className="blog-list">
+      <div
+        css={{
+          marginRight: `-1rem`,
+          marginLeft: `-1rem`,
+          [mediaQueries.sm]: {
+            marginRight: `-1.5rem`,
+            marginLeft: `-1.5rem`,
+          },
+        }}
+      >
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <PostLink 
             key={node.id}
