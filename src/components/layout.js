@@ -7,19 +7,28 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-
+import styled from "@emotion/styled"
 import Topbar from "./topbar"
 import Footer from "./footer"
 import "../styles/sanitize.css"
 import "../styles/global-styles.css"
-import "../styles/layout.css"
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
+
+const Main = styled.main`
+  flex-grow: 1;
+`
 
 const Layout = ({ children }) => (
-  <div className="site-wrapper">
+  <Wrapper>
     <Topbar />
-    <main>{children}</main>
+    <Main>{children}</Main>
     <Footer />
-  </div>
+  </Wrapper>
 )
 
 Layout.propTypes = {
