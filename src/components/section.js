@@ -1,11 +1,31 @@
 import React from "react"
+import { css } from "@emotion/core"
+import styled from "@emotion/styled"
+import mediaQueries from "../tokens/media-queries"
 import Container from "./container"
-import styles from "../styles/section.module.css"
+
+const styles = css`
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  ${mediaQueries.sm} {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+`
+
+const Title = styled.h2`
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.125;
+  ${mediaQueries.sm} {
+    font-size: 2.5rem;
+  }
+`
 
 const Section = ({ title, children }) => (
-  <section className={styles.section}>
+  <section css={styles}>
     <Container>
-      <h2 className={styles.sectionTitle}>{title}</h2>
+      <Title>{title}</Title>
       {children}
     </Container>
   </section>
