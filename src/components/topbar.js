@@ -1,52 +1,68 @@
 import React from "react"
+import { css } from "@emotion/core"
+import { colors, mediaQueries } from "../tokens"
 import { Link } from "gatsby"
-import styles from "../styles/topbar.module.css"
-
+import SocialLink from "./socialLink"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
+const styles = css`
+  display: flex;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  ${mediaQueries.sm} {
+    justify-content: flex-end;
+  }
+
+  a {
+    padding: 1rem .5rem;
+    color: ${colors.text};
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      color: ${colors.black};
+      text-decoration: underline;
+    }
+    ${mediaQueries.sm} {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+  }
+`
+
 const Topbar = () => (
-  <div className={styles.topbar}>
+  <div css={styles}>
     <Link
-      className={styles.siteTitle}
+      css={{
+        marginRight: `auto`,
+        textTransform: `uppercase`,
+      }}
       to="/"
     >
       Nelson Reitz
     </Link>
 
-    <a
-      className={styles.socialLink}
+    <SocialLink
+      socialNetwork="Github"
       href="//github.com/nelsonreitz"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Github"
     >
       <FontAwesomeIcon icon={[`fab`, `github`]} />
-      <span className={styles.label}>Github</span>
-    </a>
+    </SocialLink>
 
-    <a
-      className={styles.socialLink}
+    <SocialLink
+      socialNetwork="Twitter"
       href="//twitter.com/nelsreitz"
-      target="_blank" 
-      rel="noopener noreferrer"
-      aria-label="Twitter"
-      >
+    >
       <FontAwesomeIcon icon={[`fab`, `twitter`]} />
-      <span className={styles.label}>Twitter</span>
-    </a>
+    </SocialLink>
 
-    <a
-      className={styles.socialLink}
+    <SocialLink
+      socialNetwork="Linkedin"
       href="//linkedin.com/in/nelsonreitz"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="LinkedIn"
     >
       <FontAwesomeIcon icon={[`fab`, `linkedin-in`]} />
-      <span className={styles.label}>LinkedIn</span>
-    </a>
+    </SocialLink>
   </div>
 )
 

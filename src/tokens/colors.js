@@ -5,6 +5,7 @@ const colors = {
   mutedText: `#537b98`,
   red: `#ec4a61`,
   white: `#fff`,
+  black: `#000`,
 }
 
 export default colors
