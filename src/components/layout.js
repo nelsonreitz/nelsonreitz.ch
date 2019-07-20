@@ -7,11 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Global } from "@emotion/core"
 import styled from "@emotion/styled"
+import sanitize from "../styles/sanitize.js"
+import globalStyles from "../styles/global-styles";
 import Topbar from "./topbar"
 import Footer from "./footer"
-import "../styles/sanitize.css"
-import "../styles/global-styles.css"
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,6 +26,8 @@ const Main = styled.main`
 
 const Layout = ({ children }) => (
   <Wrapper>
+    <Global styles={sanitize} />
+    <Global styles={globalStyles} />
     <Topbar />
     <Main>{children}</Main>
     <Footer />
