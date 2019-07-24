@@ -3,12 +3,26 @@ import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { colors, mediaQueries } from "../tokens"
 import Container from "./container"
+import jumbotronBg from "../images/jumbotron-bg.svg"
 
 const styles = css`
   padding-top: 2rem;
   padding-bottom: 4rem;
   ${mediaQueries.sm} {
     padding-top: 10vh;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    width: 80rem;
+    height: 60rem;
+    background-image: url(${jumbotronBg});
+    background-size: 100%;
+    opacity: .175;
+    z-index: -1;
   }
 
   p {
