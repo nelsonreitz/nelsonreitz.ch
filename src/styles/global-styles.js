@@ -51,12 +51,12 @@ const globalStyles = css`
     width: 100%;
     height: 3px;
     margin-top: -5px;
-    background-color: ${colors.mutedText};
+    background-color: ${colors.secondary};
     transition: background-color .05s ease-in-out;
   }
 
   p a:hover:after {
-    background-color: ${colors.secondary};
+    background-color: ${colors.mutedText};
   }
 `
 
