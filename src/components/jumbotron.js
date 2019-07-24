@@ -26,6 +26,7 @@ const styles = css`
 const Title = styled.h1`
   margin-bottom: 1.5rem;
   font-size: 3rem;
+  line-height: 1.125;
   ${mediaQueries.sm} {
     font-size: 4rem;
   }
