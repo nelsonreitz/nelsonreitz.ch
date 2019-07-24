@@ -21,7 +21,7 @@ const styles = css`
     font-weight: 600;
     text-decoration: none;
     &:hover {
-      color: ${colors.black};
+      color: ${colors.white};
       text-decoration: underline;
     }
     ${mediaQueries.sm} {

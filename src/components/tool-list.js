@@ -18,7 +18,7 @@ const Title = styled.h3`
   margin-bottom: 2rem;
   font-size: 1.125rem;
   font-weight: 400;
-  border-bottom: 1px solid #dee3e8;
+  border-bottom: 1px solid ${colors.primaryHighlight};
 `
 
 const Row = styled.div`
@@ -135,11 +135,11 @@ const cardStyles = css`
     margin-bottom: .5rem;
     margin-left: auto;
     font-size: 3rem;
-    color: ${colors.primary};
-    fill: ${colors.primary};
+    color: ${colors.secondary};
+    fill: ${colors.secondary};
 
     path {
-      fill: ${colors.primary};
+      fill: ${colors.secondary};
     }
   }
 `
@@ -147,7 +147,7 @@ const cardStyles = css`
 const CardTitle = styled.h4`
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.125;
 `
 

@@ -6,11 +6,13 @@ const globalStyles = css`
 
   html {
     font-size: 16px;
+    background-color: ${colors.dark};
   }
 
   body {
     font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     color: ${colors.text};
+    background-color: ${colors.primary};
   }
 
   h1,
@@ -46,7 +48,7 @@ const globalStyles = css`
     transition: text-decoration-color .05s ease-in-out;
 
     &:hover {
-      text-decoration-color: ${colors.mutedText}
+      text-decoration-color: ${colors.white}
     }
   }
 `

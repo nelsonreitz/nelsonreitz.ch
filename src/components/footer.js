@@ -9,7 +9,7 @@ const styles = css`
   padding-top: 4rem;
   padding-bottom: 6rem;
   color: ${colors.white};
-  background-color: ${colors.primary};
+  background-color: ${colors.dark};
 
   p a {
     font-weight: 600;

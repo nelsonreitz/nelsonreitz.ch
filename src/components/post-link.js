@@ -12,7 +12,7 @@ const linkStyles = css`
   color: ${colors.text};
   text-decoration: none;
   border-radius: 3px;
-  background-color: ${colors.white};
+  background-color: ${colors.primary};
   transition: background-color .05s ease-in-out;
   ${mediaQueries.sm} {
     padding-right: 1.5rem;
@@ -20,7 +20,7 @@ const linkStyles = css`
   }
 
   &:hover {
-    background-color: #f2f7fb;
+    background-color: ${colors.primaryHighlight};
   }
 
   &:last-of-type {

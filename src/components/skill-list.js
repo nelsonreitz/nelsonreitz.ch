@@ -89,7 +89,7 @@ const skillCardStyles = css`
   display: flex;
   align-items: center;
   padding: 1.5rem 1rem;
-  background-color: #f2f7fb;
+  background-color: ${colors.primaryHighlight};
   border-radius: 3px;
   ${mediaQueries.sm} {
     min-height: 5rem;
@@ -110,7 +110,7 @@ const skillCardStyles = css`
 const CardTitle = styled.h3`
   margin-bottom: 0;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.125;
 `
 

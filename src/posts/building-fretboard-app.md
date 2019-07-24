@@ -9,5 +9,5 @@ featuredImage: ./fretboard-thumbnail.png
 **Live demo**:  
 https://nelsonreitz.github.io/fretboard-notes
 
-**View source**:  
+**Sources**:  
 https://nelsonreitz.github.com/fretboard-notes
