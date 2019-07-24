@@ -14,6 +14,11 @@ const styles = css`
   p a {
     font-weight: 600;
     color: ${colors.secondary};
+
+    &:after {
+      background-color: ${colors.mutedText};
+    }
+
     &:hover:after {
       background-color: ${colors.secondary};
     }
