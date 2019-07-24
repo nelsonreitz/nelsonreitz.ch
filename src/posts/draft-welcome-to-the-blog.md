@@ -1,6 +1,7 @@
 ---
 title: "Welcome to the blog!"
 date: "2019-06-24"
+featuredImage: ./celonic-thumbnail.png
 ---
 
 This is a quick post to introduce myself and write a few lines about the intentions behind this blog. 
