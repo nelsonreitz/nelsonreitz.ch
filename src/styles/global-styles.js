@@ -42,21 +42,12 @@ const globalStyles = css`
     display: inline-block;
     position: relative;
     color: ${colors.text};
-    text-decoration: none;
-  }
+    text-decoration-color: ${colors.secondary};
+    transition: text-decoration-color .05s ease-in-out;
 
-  p a:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin-top: -5px;
-    background-color: ${colors.secondary};
-    transition: background-color .05s ease-in-out;
-  }
-
-  p a:hover:after {
-    background-color: ${colors.mutedText};
+    &:hover {
+      text-decoration-color: ${colors.mutedText}
+    }
   }
 `
 
