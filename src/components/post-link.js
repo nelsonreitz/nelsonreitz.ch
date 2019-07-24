@@ -29,10 +29,10 @@ const linkStyles = css`
 `
 
 const imgStyles = css`
-  display: none;
+  display: none !important;
   margin-right: 1.5rem;
   ${mediaQueries.sm} {
-    display: none;
+    display: block !important;
   }
 `
 
