@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Nelson Reitz | Swiss Front-end Developer" keywords={[`Front-end Developer`, `Lausanne`, `UX Designer`, `JAMstack`]} />
     <Jumbotron />
 
-    <Section title="Blog posts">
+    <Section title="Projects case studies">
       <div
         css={{
           marginRight: `-1rem`,
@@ -31,6 +31,7 @@ const IndexPage = ({ data }) => (
             to={node.fields.slug}
             title={node.frontmatter.title}
             date={node.frontmatter.date}
+            img={node.frontmatter.featuredImage.childImageSharp.fixed}
           />
         ))}
       </div>
@@ -58,6 +59,13 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            featuredImage {
+              childImageSharp {
+                fixed(width: 70, height: 70) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
           fields {
             slug
