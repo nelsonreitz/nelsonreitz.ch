@@ -1,7 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
-import { colors, mediaQueries } from "../tokens"
+import { mediaQueries } from "../tokens"
 import Container from "./container"
 import Button from "./button"
 
@@ -33,27 +33,11 @@ const Title = styled.h1`
   }
 `
 
-const Accent = styled.p`
-  margin-bottom: 1.5rem;
-
-  em {
-    font-style: initial;
-    color: ${colors.red};
-  }
-
-  span {
-    vertical-align: middle;
-  }
-`
-
 const Jumbotron = () => (
   <div css={styles}>
     <Container>
       <Title>Hi! I am Nelson Reitz, a Swiss Front-end Developer</Title>
-      <p>I build user interfaces for websites and apps. Currently based in Lausanne. Previously @ DevFactory.</p>
-      <Accent>
-        <em>Now available for hire</em> <span role="img" aria-label="Sparkles">✨</span>
-      </Accent>
+      <p>I build user interfaces for websites and apps. Currently based in Lausanne and Frontend Developer <a href="//antistatique.net">@Antistatique</a>.</p>
       <Button to="mailto:nelson.reitz@gmail.com">Get in touch</Button>
     </Container>
   </div>
