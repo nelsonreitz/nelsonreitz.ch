@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Global } from "@emotion/core"
 import styled from "@emotion/styled"
 import sanitize from "../styles/sanitize.js"
-import globalStyles from "../styles/global-styles";
+import globalStyles from "../styles/global-styles"
 import Topbar from "./topbar"
 import Footer from "./footer"
 

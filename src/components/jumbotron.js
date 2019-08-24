@@ -37,7 +37,11 @@ const Jumbotron = () => (
   <div css={styles}>
     <Container>
       <Title>Hi! I am Nelson Reitz, a Swiss Front-end Developer</Title>
-      <p>I build user interfaces for websites and apps. Currently based in Lausanne and Frontend Developer <a href="//antistatique.net">@Antistatique</a>.</p>
+      <p>
+        I build user interfaces for websites and apps. Currently based in
+        Lausanne and Frontend Developer{" "}
+        <a href="//antistatique.net">@Antistatique</a>.
+      </p>
       <Button to="mailto:nelson.reitz@gmail.com">Get in touch</Button>
     </Container>
   </div>

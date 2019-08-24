@@ -36,9 +36,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      link={[
-        { rel: `shortcut icon`, type: `image/png`, href: `${favicon}` },
-      ]}
+      link={[{ rel: `shortcut icon`, type: `image/png`, href: `${favicon}` }]}
       meta={[
         {
           name: `description`,

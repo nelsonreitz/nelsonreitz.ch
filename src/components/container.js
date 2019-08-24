@@ -9,10 +9,6 @@ const styles = css`
   margin-left: auto;
 `
 
-const Container = ({ children }) => (
-  <div css={styles}>
-    {children}
-  </div>
-)
+const Container = ({ children }) => <div css={styles}>{children}</div>
 
 export default Container

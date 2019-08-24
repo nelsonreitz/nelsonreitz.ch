@@ -8,7 +8,7 @@ const styles = css`
     vertical-align: top;
     width: 1rem;
     height: 1rem;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 
   span {

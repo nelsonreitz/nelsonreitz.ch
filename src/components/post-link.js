@@ -13,7 +13,7 @@ const linkStyles = css`
   text-decoration: none;
   border-radius: 3px;
   background-color: ${colors.primary};
-  transition: background-color .05s ease-in-out;
+  transition: background-color 0.05s ease-in-out;
   ${mediaQueries.sm} {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -48,10 +48,7 @@ const Date = styled.p`
 `
 
 const PostLink = ({ to, img, title, date }) => (
-  <Link
-    css={linkStyles}
-    to={to}
-  >
+  <Link css={linkStyles} to={to}>
     <Img
       fixed={img}
       alt={title}

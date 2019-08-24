@@ -11,17 +11,14 @@ const styles = css`
   text-decoration: none;
   border-radius: 4px;
   background-color: ${colors.red};
-  transition: background-color .1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
   &:hover {
     background-color: ${colors.darkRed};
   }
 `
 
 const Button = ({ to, children }) => (
-  <a
-    css={styles}
-    href={to}
-  >
+  <a css={styles} href={to}>
     {children}
   </a>
 )
